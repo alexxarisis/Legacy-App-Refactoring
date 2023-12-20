@@ -21,7 +21,8 @@ through the use of various techniques and best practises.
 * In-memory (Volatile)
 * On storage (Stable)
 
-[versions_control.mp4](assets/versions_control.mp4)
+https://github.com/alexxarisis/Legacy-App-Refactoring/assets/65713456/5778bc84-14b1-43aa-85c1-77e57dae48ae
+
 
 ### Insertion of **LaTeX** elements:
   * `Chapters`
@@ -34,7 +35,7 @@ through the use of various techniques and best practises.
 
 ### HTML conversion.
 
-[html_conversion.mp4](assets/html_conversion.mp4)
+https://github.com/alexxarisis/Legacy-App-Refactoring/assets/65713456/b5253efc-f09c-4d3f-8e11-6cf0d7981b86
 
 ## Refactoring
 
