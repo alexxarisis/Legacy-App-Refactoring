@@ -128,7 +128,7 @@ public class MainWindow {
 		JCheckBoxMenuItem stableVersionsStrategyButton = new JCheckBoxMenuItem("Stable");
 		stableVersionsStrategyButton.addActionListener(e -> {
             versionsManager.setStrategyType("stableStrategy");
-            if(!versionsManager.isEnabled()) {
+            if (!versionsManager.isEnabled()) {
                 latexEditorView.getController().enact("enableVersionsManagement");
             }
             else {
@@ -141,7 +141,7 @@ public class MainWindow {
 
 		volatileVersionsStrategyButton.addActionListener(e -> {
             versionsManager.setStrategyType("volatileStrategy");
-            if(!versionsManager.isEnabled()) {
+            if (!versionsManager.isEnabled()) {
                 latexEditorView.getController().enact("enableVersionsManagement");
             }
             else {
