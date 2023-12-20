@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class DisableVersionsManagementCommandTest {
 
@@ -30,7 +30,7 @@ public class DisableVersionsManagementCommandTest {
 	public void disableVolatile() {
 		enableStrategy("volatileStrategy");
 		disableStrategy();
-		assertTrue(!versionsManager.isEnabled());
+        assertFalse(versionsManager.isEnabled());
 	}
 	
 	@Test
@@ -38,11 +38,12 @@ public class DisableVersionsManagementCommandTest {
 	public void disableStable() {
 		enableStrategy("stableStrategy");
 		disableStrategy();
-		assertTrue(!versionsManager.isEnabled());
+        assertFalse(versionsManager.isEnabled());
 	}
-	
+
 	private void enableStrategy(String strategy) {
-		
+		versionsManager.setStrategyType(strategy);
+		latexEditorView.getController().enact("enableVersionsManagement");
 	}
 	
 	private void disableStrategy() {
